@@ -1,7 +1,7 @@
 # Senior Design Project
 [Generated Song](https://vocaroo.com/embed/fHoORQk0V9G)
 # LSTM Music Generation
-The input to the Recurrent Neural Network is a sequence of four chords. Each value is a chord mapped to a specific integer value ranged 0 to 23. 
+'''The input to the Recurrent Neural Network is a sequence of four chords. Each value is a chord mapped to a specific integer value ranged 0 to 23. '''
 
 The RNN generates a sequence of 16 notes that correspond to the four chords that were given as input.
 
