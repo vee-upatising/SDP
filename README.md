@@ -9,10 +9,13 @@ The use of the RNN was a specific design choice. I chose it because with this pr
 
 My second design choice was the use of LSTM (Long Short Term Memory) layers inside the RNN. LSTM layers allows the network to be able to handle long-term time dependencies. The first design of this block did not include LSTM layers. After testing the network showed that it lost its context around the 10th note it generated. After which the network generated the exact same value for the rest of the 6 notes. To combat this, the vanilla RNN layers were replaced with LSTM layers. This allowed the Neural Network to keep track of long-term dependencies and keep its context all the way up to the 16th note.
 
-The current design of the Neural Network includes 3 LSTM layers with 256 nodes at each layer, which feeds into 3 Dense layers with 512 nodes at each of those layers. There are currently 3 Neural Networks each trained on a different genre of music. The current genres of music are Pop, Blues, and Classical. Here are the loss functions for each model respectively:
+The current design of the Neural Network includes 3 LSTM layers with 256 nodes at each layer, which feeds into 3 Dense layers with 512 nodes at each of those layers. There are currently 3 Neural Networks each trained on a different genre of music. The current genres of music are Pop, Blues, and Classical.
 
+# Pop
 ![Pop](https://raw.githubusercontent.com/vee-upatising/SDP/master/model1.JPG)
+# Blues
 ![Blues](https://raw.githubusercontent.com/vee-upatising/SDP/master/model2.JPG)
+# Classical
 ![Classical](https://raw.githubusercontent.com/vee-upatising/SDP/master/model3.JPG)
 
 
